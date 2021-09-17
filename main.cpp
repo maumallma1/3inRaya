@@ -285,5 +285,6 @@ int main() {
 	if (count == 9){
 		cout << "EMPATE";
 	}
-	
+
+return 0;	
 }
