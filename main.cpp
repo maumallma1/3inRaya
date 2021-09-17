@@ -286,5 +286,5 @@ int main() {
 		cout << "EMPATE";
 	}
 
-return 0;	
+	return 0;	
 }
