@@ -24,21 +24,16 @@ using namespace std;
 
 
 int main() {
+	/*Variables Generales*/
     char x;
 	char y;
-	cout << "TRES EN RAYA \n" << endl;
-	cout << "Jugador 1:" << endl;
-	cin >> x;
-	cout << "Jugador 2:" << endl;
-	cin >> y;
-	cout << "Estas son las posiciones: \n" << endl;
-    cout << " " << 1 << " | " << 2 << " | " << 3 << endl;
-	cout << "-----------" << endl;
-	cout << " " << 4 << " | " << 5 << " | " << 6 << endl;
-	cout << "-----------" << endl;
-	cout << " " << 7 << " | " << 8 << " | " << 9 << endl;
-	cout << "\n" << endl;
+	int ubi;
+	int player_1 = 0;
+	int player_2 = 1;
+	int count = 0;
+	int jugador = 1;
 	
+	/*Variables del Tablero*/
 	char a = ' ';
 	char b = ' ';
 	char c = ' ';
@@ -48,14 +43,28 @@ int main() {
 	char g = ' ';
 	char h = ' ';
 	char j = ' ';
-	int ubi;
-	int player_1 = 0;
-	int player_2 = 1;
-	int count = 0;
-	int jugador = 1;
 	
+	/*Elección de Icono para Jugar*/
+	cout << "===============" << "TRES EN RAYA" << "===============" << endl;
+	cout << "Jugador 1: ";
+	cin >> x;
+	cout << "Jugador 2: ";
+	cin >> y;
+	
+	/*Manual de Posiciones*/
+	cout << "Estas son las posiciones: \n" << endl;
+    cout << " " << 1 << " | " << 2 << " | " << 3 << endl;
+	cout << "-----------" << endl;
+	cout << " " << 4 << " | " << 5 << " | " << 6 << endl;
+	cout << "-----------" << endl;
+	cout << " " << 7 << " | " << 8 << " | " << 9 << endl;
+	cout << "\n" << endl;
+	
+	/*Bucle de Funcionamiento*/	
 	for (int i = 1; i <= 9; i++){
 		cout << "Elegir posicion del JUGADOR " << jugador << ":" << endl;
+		
+		/*Condicionales del Jugador 1*/		
 		if (player_1 == 0){
 			cin >> ubi;
 			cout << "\a";
@@ -144,6 +153,8 @@ int main() {
 				jugador ++;
 			}
 		}
+		
+		/*Condicional del Jugador 2*/
 		else if (player_2 == 0) {
 			cin >> ubi;
 			cout << "\a";
@@ -219,6 +230,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional para la corroboracion de las posiciones usadas*/
 			else {
 				cout << "POSICION USADA! (Elija otra)" << endl;
 				i--;
@@ -226,6 +238,7 @@ int main() {
 				player_2--;
 				jugador++;
 			}
+			/*Condicional que permite el cambio de Jugador 1 y 2*/
 			if ( a != ' ' || b != ' '  || c != ' ' || d != ' ' || e != ' ' || f != ' ' || g != ' ' || h != ' ' || j != ' '){
 				player_1--;
 				player_2++;
@@ -233,7 +246,7 @@ int main() {
 			}
 		}
 		
-		
+		/*Condicionales de corroboracion del ganador*/
 		/* Ubicación de X */
 		if (a == x && b == x && c == x){
 			cout << x << " es el ganador";
@@ -303,6 +316,8 @@ int main() {
 		}
 		count++;
 	}
+	
+	/*Condicional de corroboracion del empate*/
 	if (count == 9){
 		cout << "EMPATE";
 	}
