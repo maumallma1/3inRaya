@@ -149,7 +149,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
-			/*Condicional repetir turno de jugador al elige posicion ocupada*/
+			/*Condicional repetir turno de jugador al elegir posicion ocupada*/
 			else {
 				cout << "POSICION USADA! (Elija otra)" << endl;
 				i--;
