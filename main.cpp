@@ -68,6 +68,7 @@ int main() {
 		if (player_1 == 0){
 			cin >> ubi;
 			cout << "\a";
+			/*Condicional simbolo en posicion 1*/
 			if (ubi == 1 && a == ' '){
 				a = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -76,6 +77,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 2*/
 			else if (ubi == 2 && b == ' '){
 				b = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -84,6 +86,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 3*/
 			else if (ubi == 3 && c == ' '){
 				c = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -92,6 +95,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 4*/
 			else if (ubi == 4 && d == ' '){
 				d = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -100,6 +104,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 5*/
 			else if (ubi == 5 && e == ' '){
 				e = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -108,6 +113,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 6*/
 			else if (ubi == 6 && f == ' '){
 				f = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -116,6 +122,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 7*/
 			else if (ubi == 7 && g == ' '){
 				g = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -124,6 +131,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 8*/
 			else if (ubi == 8 && h == ' '){
 				h = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -132,6 +140,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional simbolo en posicion 9*/
 			else if (ubi == 9 && j == ' '){
 				j = x;
 				cout << " " << a << " | " << b << " | " << c << endl;
@@ -140,6 +149,7 @@ int main() {
 				cout << "-----------" << endl;
 				cout << " " << g << " | " << h << " | " << j << endl;
 			}
+			/*Condicional para repetir turno de jugador si elige posicion ocupada*/
 			else {
 				cout << "POSICION USADA! (Elija otra)" << endl;
 				i--;
@@ -147,6 +157,7 @@ int main() {
 				player_1--;
 				jugador --;
 			}
+			/*Condicional avanzar turno*/
 			if ( a != ' ' || b != ' '  || c != ' ' || d != ' ' || e != ' ' || f != ' ' || g != ' ' || h != ' ' || j != ' '){
 				player_2--;
 				player_1++;
