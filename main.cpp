@@ -25,7 +25,7 @@ using namespace std;
 
 int main() {
 	/*Variables Generales*/
-    char x;
+	char x;
 	char y;
 	int ubi;
 	int player_1 = 0;
@@ -53,7 +53,7 @@ int main() {
 	
 	/*Manual de Posiciones*/
 	cout << "Estas son las posiciones: \n" << endl;
-    cout << " " << 1 << " | " << 2 << " | " << 3 << endl;
+	cout << " " << 1 << " | " << 2 << " | " << 3 << endl;
 	cout << "-----------" << endl;
 	cout << " " << 4 << " | " << 5 << " | " << 6 << endl;
 	cout << "-----------" << endl;
